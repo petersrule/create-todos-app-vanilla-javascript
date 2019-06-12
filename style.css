@@ -1,0 +1,70 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #f1f1f1f1;
+}
+
+.container {
+  margin: 0 auto;
+  width: 40vw;
+  text-align: center;
+}
+
+#todos {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+
+.todo {
+  padding: 0.3rem 1.5rem;
+  border: 3px solid #e3e3e3;
+  margin: 0.2rem;
+}
+
+.todo label:hover {
+  cursor: pointer;
+}
+
+.todo input {
+  position: absolute;
+  visibility: hidden;
+}
+
+.todo i {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 13px;
+  margin-right: 0.5rem;
+  color: transparent;
+}
+
+.todo input:checked ~ i {
+  color: #414141;
+}
+
+#new-todo input,
+.container .addTodoButton {
+  width: 20rem;
+  margin: 0.2rem 0;
+  padding: 0.1rem 0;
+}
+
+.todo button {
+  float: right;
+  padding: 0.6rem;
+  border: none;
+  color: #e48989;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.container .addTodoButton {
+  cursor: pointer;
+}
